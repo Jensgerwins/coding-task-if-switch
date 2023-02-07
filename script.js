@@ -1,7 +1,7 @@
 const size = 25;
 let result;
 
-if (size < 10) {
+if (size > 10 && size < 20) {
   result = "Greater than 10";
 } else if (size > 20) {
   result = "Greater than 20";
@@ -14,13 +14,20 @@ console.log(result);
 
 
 function oddEven (zahl) {
-if(zahl.POSITIVE_INFINITY)
+if(zahl % 2 == 0) 
 {
-  return zahl.POSITIVE_INFINITY
+  
+   return (zahl + " result should be even");
 }
-
+else {
+ return (zahl + " result should be odd")
+}
 }
 console.log(oddEven(4));
+console.log(oddEven(3));
+console.log(oddEven(-1));
+console.log(oddEven(10));
+
 
 
 function oldyoung(alter) {
